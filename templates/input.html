@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark background for a futuristic feel */
+            color: #fff; /* Light text for contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: #333; /* Dark form background */
+            padding: 30px;
+            border-radius: 15px; /* Rounded corners for a modern look */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            color: #0dcaf0; /* Bright accent color for headings */
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 300; /* Lighter font weight for a sleek appearance */
+        }
+        label {
+            color: #adb5bd; /* Soft grey for text */
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px; /* Smaller font size for a clean look */
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #495057; /* Dark border for inputs */
+            background-color: #212529; /* Slightly lighter input background */
+            border-radius: 8px; /* Rounded inputs */
+            color: #ffffff; /* White input text */
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #0dcaf0; /* Matching the heading color for consistency */
+            color: #212529; /* Dark text for readability */
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #3a3a3a; /* Darker shade on hover */
+            color: #0dcaf0;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Fish Type Classification</h2>
+        <form action="/predict" method="post">
+            <div class="input-group">
+                <label for="feature1">Weight:</label>
+                <input type="text" id="feature1" name="feature1">
+            </div>
+            <div class="input-group">
+                <label for="feature2">Length 1:</label>
+                <input type="text" id="feature2" name="feature2">
+            </div>
+            <div class="input-group">
+                <label for="feature3">Length 2:</label>
+                <input type="text" id="feature3" name="feature3">
+            </div>
+            <div class="input-group">
+                <label for="feature4">Length 3:</label>
+                <input type="text" id="feature4" name="feature4">
+            </div>
+            <div class="input-group">
+                <label for="feature5">Height:</label>
+                <input type="text" id="feature5" name="feature5">
+            </div>
+            <div class="input-group">
+                <label for="feature6">Width:</label>
+                <input type="text" id="feature6" name="feature6">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
